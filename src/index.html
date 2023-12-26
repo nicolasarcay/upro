@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPRO - Universidad Provincial de Oficios Eva Perón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="font-sans">
+    <!-- Aplicar picture en todas las imagenes del sitio -->
+    <header
+      class="fixed w-full top-0 scroll__header text-light tracking-wider text-xl"
+    >
+      <!-- Navbar Mobile-->
+      <nav class="wrapper flex items-center justify-center lg:hidden">
+        <img
+          src="./assets/images/upro-menu-name-white.png"
+          alt="Logo UPRO"
+          class="max-h-[70px] py-4 z-50 md:max-h-[100px]"
+        />
+        <input type="checkbox" name="menu" id="menu" class="peer hidden" />
+        <label
+          for="menu"
+          class="bg-menu w-6 h-5 bg-cover bg-center cursor-pointer absolute right-6 peer-checked:bg-close transition-all z-50"
+        ></label>
+        <div
+          class="fixed inset-0 bg-violet/60 translate-x-full peer-checked:translate-x-0 transition-transform"
+        >
+          <ul
+            class="absolute inset-x-0 top-24 p-12 bg-primary w-[90%] mx-auto text-center text-light font-bold uppercase grid gap-5 rounded-md shadow-md"
+          >
+            <li><a href="carreras.html">Carreras</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="sedes.html">Sedes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Fin Navbar Mobile -->
+      <!-- Navbar desktop-->
+      <nav class="wrapper hidden items-center justify-between lg:flex">
+        <ul class="py-4 mx-auto flex gap-6">
+          <li><a href="carreras.html">Carreras</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+        </ul>
+        <img
+          src="./assets/images/upro-menu-name-white.png"
+          alt="Logo UPRO"
+          class="max-w-[100px] py-4"
+        />
+        <ul class="py-4 mx-auto flex gap-6">
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Fin Navbar desktop -->
+    </header>
+    <main>
+      <!-- Section de bienvenida -->
+      <section
+        class="bg-main bg-no-repeat flex flex-col items-center justify-center text-light bg-cover bg-center lg:py-64"
+      >
+        <h2 class="uppercase text-xl md:text-3xl pb-6 pt-56">
+          Bienvenidos a la
+        </h2>
+        <h1
+          class="text-3xl font-bold md:text-5xl w-[85%] md:w-[60%] text-center font-serif pb-12"
+        >
+          Universidad Provincial de Oficios
+        </h1>
+      </section>
+      <!-- Fin section de bienvenida -->
+      <div class="bg-main-why-mobile md:bg-main-why-desktop">
+        <!-- Porque estudiar un oficio -->
+        <section class="wrapper py-10 lg:w-[50%]">
+          <article class="flex flex-col items-center justify-center">
+            <h4 class="subtitle-primary">Preparandote para el futuro</h4>
+            <h3 class="title-primary">¿Porque estudiar un oficio?</h3>
+            <p class="text-l text-center pb-10">
+              Los oficios son una excelente opción para quienes buscan una
+              carrera gratificante y con oportunidades de crecimiento. En la
+              actualidad, el mercado laboral está cada vez más competitivo, y
+              los oficios son una forma de destacarse y acceder a mejores
+              oportunidades.
+            </p>
+            <a href="" class="text-center underline">Leer más</a>
+          </article>
+        </section>
+        <!-- Fin Porque estudiar un oficio -->
+        <section class="wrapper flex flex-col my-10 gap-5 md:flex-row">
+          <article class="md:w-[50%] flex flex-col justify-between">
+            <img
+              src="./assets/images/carreras-upro.jpg"
+              alt="mujer trabajando en tapiceria"
+              class="pb-8"
+            />
+            <h3 class="px-4 font-serif text-2xl pb-4 text-center md:text-left">
+              ¿Que podes estudiar?
+            </h3>
+            <p class="px-4 pb-6 text-secondary">
+              Ofrecemos una amplia variedad de cursos y carreras en oficios de
+              alta demanda laboral. Nuestros programas educativos están
+              diseñados para que puedas adquirir las habilidades y conocimientos
+              necesarios para desempeñarte con éxito en tu profesión.
+            </p>
+            <a href="" class="button-primary">Conoce nuestras carreras</a>
+          </article>
+          <article class="md:w-[50%] flex flex-col justify-stretch">
+            <img
+              src="./assets/images/inscripciones-upro.jpg"
+              alt="mujer trabajando en tapiceria"
+              class="pb-8"
+            />
+            <div class="flex justify-start flex-col">
+              <h3
+                class="px-4 font-serif text-2xl pb-4 text-center md:text-left"
+              >
+                Estudia en toda la provincia
+              </h3>
+              <p class="px-4 pb-6 text-secondary">
+                Tenes sedes en Villa Mercedes, San Luis, Villa de Merlo, Buena
+                Esperanza, Tilisarao, Quines, Candelaria, San Martín, La Calera
+                para poder elegir que cursos y carreras cursar.
+              </p>
+            </div>
+            <a href="" class="button-primary">Nuestras sedes</a>
+          </article>
+        </section>
+        <section class="wrapper flex flex-col gap-5 py-10 md:flex-row">
+          <article class="md:w-[50%] flex flex-col justify-between">
+            <img
+              src="./assets/images/carreras-upro.jpg"
+              alt="mujer trabajando en tapiceria"
+              class="pb-8"
+            />
+            <h3 class="px-4 font-serif text-2xl pb-4 text-center md:text-left">
+              ¿Que podes estudiar?
+            </h3>
+            <p class="px-4 pb-6 text-secondary">
+              Ofrecemos una amplia variedad de cursos y carreras en oficios de
+              alta demanda laboral. Nuestros programas educativos están
+              diseñados para que puedas adquirir las habilidades y conocimientos
+              necesarios para desempeñarte con éxito en tu profesión.
+            </p>
+            <a href="" class="button-primary">Conoce nuestras carreras</a>
+          </article>
+          <article class="md:w-[50%] flex flex-col justify-stretch">
+            <img
+              src="./assets/images/inscripciones-upro.jpg"
+              alt="mujer trabajando en tapiceria"
+              class="pb-8"
+            />
+            <div class="flex justify-start flex-col">
+              <h3
+                class="px-4 font-serif text-2xl pb-4 text-center md:text-left"
+              >
+                ¡Comienza tu futuro profesional!
+              </h3>
+              <p class="px-4 pb-6 text-secondary">
+                En la UPrO puedes desarrollar las habilidades y conocimientos
+                necesarios para desempeñarte con éxito en tu profesión.
+              </p>
+            </div>
+            <a href="" class="button-primary">Inscribite hoy</a>
+          </article>
+        </section>
+      </div>
+      <!-- Call to action full width -->
+      <section
+        class="flex flex-col justify-center items-center py-20 bg-inscription bg-fixed bg-top bg-no-repeat bg-cover lg:py-36"
+      >
+        <h4 class="uppercase text-center text-light pb-6">
+          ¿Estas listo para cambiar tu futuro?
+        </h4>
+        <h3
+          class="font-serif text-light text-3xl text-center pb-9 font-bold lg:text-4xl"
+        >
+          LA UPrO ES LA OPCIÓN PERFECTA PARA VOS
+        </h3>
+        <a href="" class="button-green">Inscripciones Abiertas</a>
+      </section>
+      <!-- Fin Call to action full width -->
+      <section
+        class="wrapper py-14 flex flex-col-reverse md:flex-row md:py-20 md:items-center md:gap-x-10"
+      >
+        <div class="w-[100%] md:w-[50%] md:-mt-5 lg:-mt-24">
+          <h4 class="subtitle-primary text-start">
+            Nuestros planes de estudio
+          </h4>
+          <h3 class="title-primary text-start">
+            Conoce más de nuestra formación
+          </h3>
+          <p>
+            Ofrece una amplia variedad de cursos y carreras en oficios de alta
+            demanda laboral. Nuestros programas educativos están diseñados para
+            que puedas adquirir las habilidades y conocimientos necesarios para
+            desempeñarte con éxito en tu profesión.
+          </p>
+        </div>
+        <div class="w-[100%] md:w-[50%] pb-5 md:pb-0">
+          <img
+            src="./assets/images/carreras-oficios.jpg"
+            alt="Carreas de oficos"
+          />
+        </div>
+      </section>
+      <section class="h-[500px]"></section>
+    </main>
+  </body>
+</html>
